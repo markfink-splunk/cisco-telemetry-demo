@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  telegraf:
+    image: marksfink/telegraf:1.11.1.sfx1-cisco
+    ports:
+      - "8086:8086"
+    environment:
+      - SPLUNK_ACCESS_TOKEN=XXX
+      - SPLUNK_REALM=us1
+  pipeline:
+    image: marksfink/bigmuddy-network-telemetry-pipeline:replay
+    depends_on:
+      - telegraf

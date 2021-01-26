@@ -1,0 +1,665 @@
+{
+  "chartExports": [
+    {
+      "chart": {
+        "created": 0,
+        "creator": null,
+        "customProperties": {},
+        "description": "",
+        "id": "EmoDKJMA0AA",
+        "lastUpdated": 0,
+        "lastUpdatedBy": null,
+        "name": "Total CPU Util (%) - 1-minute",
+        "options": {
+          "colorBy": "Scale",
+          "colorScale2": [
+            {
+              "gt": 80,
+              "gte": null,
+              "lt": null,
+              "lte": 100,
+              "paletteIndex": 16
+            },
+            {
+              "gt": null,
+              "gte": 0,
+              "lt": null,
+              "lte": 80,
+              "paletteIndex": 20
+            }
+          ],
+          "hideMissingValues": false,
+          "legendOptions": {
+            "fields": [
+              {
+                "enabled": false,
+                "property": "agent"
+              },
+              {
+                "enabled": false,
+                "property": "EncodingPath"
+              },
+              {
+                "enabled": false,
+                "property": "host"
+              },
+              {
+                "enabled": false,
+                "property": "sf_originatingMetric"
+              },
+              {
+                "enabled": true,
+                "property": "node-name"
+              },
+              {
+                "enabled": false,
+                "property": "sf_metric"
+              },
+              {
+                "enabled": false,
+                "property": "plugin"
+              },
+              {
+                "enabled": false,
+                "property": "Producer"
+              },
+              {
+                "enabled": false,
+                "property": "telegraf_type"
+              }
+            ]
+          },
+          "maximumPrecision": 3,
+          "programOptions": {
+            "disableSampling": false,
+            "maxDelay": null,
+            "minimumResolution": 0,
+            "timezone": null
+          },
+          "publishLabelOptions": [
+            {
+              "displayName": "Cisco-IOS-XR-wdsysmon-fd-oper:system-monitoring/cpu-utilization.total-cpu-one-minute",
+              "label": "A",
+              "paletteIndex": null,
+              "plotType": null,
+              "valuePrefix": null,
+              "valueSuffix": null,
+              "valueUnit": null,
+              "yAxis": 0
+            }
+          ],
+          "refreshInterval": 60000,
+          "secondaryVisualization": "Radial",
+          "sortBy": "+node-name",
+          "time": {
+            "range": 900000,
+            "type": "relative"
+          },
+          "type": "List",
+          "unitPrefix": "Metric"
+        },
+        "packageSpecifications": "",
+        "programText": "A = data('Cisco-IOS-XR-wdsysmon-fd-oper:system-monitoring/cpu-utilization.total-cpu-one-minute').publish(label='A')",
+        "relatedDetectorIds": [],
+        "tags": null
+      }
+    },
+    {
+      "chart": {
+        "created": 0,
+        "creator": null,
+        "customProperties": {},
+        "description": "",
+        "id": "EmonyNXAw6k",
+        "lastUpdated": 0,
+        "lastUpdatedBy": null,
+        "name": "Memory Util (%) - Total",
+        "options": {
+          "colorBy": "Scale",
+          "colorScale2": [
+            {
+              "gt": 80,
+              "gte": null,
+              "lt": null,
+              "lte": 100,
+              "paletteIndex": 16
+            },
+            {
+              "gt": null,
+              "gte": 0,
+              "lt": null,
+              "lte": 80,
+              "paletteIndex": 20
+            }
+          ],
+          "hideMissingValues": false,
+          "legendOptions": {
+            "fields": [
+              {
+                "enabled": false,
+                "property": "agent"
+              },
+              {
+                "enabled": false,
+                "property": "EncodingPath"
+              },
+              {
+                "enabled": false,
+                "property": "host"
+              },
+              {
+                "enabled": false,
+                "property": "sf_originatingMetric"
+              },
+              {
+                "enabled": true,
+                "property": "node-name"
+              },
+              {
+                "enabled": false,
+                "property": "sf_metric"
+              },
+              {
+                "enabled": false,
+                "property": "plugin"
+              },
+              {
+                "enabled": false,
+                "property": "Producer"
+              },
+              {
+                "enabled": false,
+                "property": "telegraf_type"
+              }
+            ]
+          },
+          "maximumPrecision": 4,
+          "programOptions": {
+            "disableSampling": false,
+            "maxDelay": null,
+            "minimumResolution": 0,
+            "timezone": null
+          },
+          "publishLabelOptions": [
+            {
+              "displayName": "Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary.system-ram-memory",
+              "label": "A",
+              "paletteIndex": null,
+              "plotType": null,
+              "valuePrefix": null,
+              "valueSuffix": null,
+              "valueUnit": null,
+              "yAxis": 0
+            },
+            {
+              "displayName": "Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary.free-physical-memory",
+              "label": "B",
+              "paletteIndex": null,
+              "plotType": null,
+              "valuePrefix": null,
+              "valueSuffix": null,
+              "valueUnit": null,
+              "yAxis": 0
+            },
+            {
+              "displayName": "Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary.free-application-memory",
+              "label": "C",
+              "paletteIndex": null,
+              "plotType": null,
+              "valuePrefix": null,
+              "valueSuffix": null,
+              "valueUnit": null,
+              "yAxis": 0
+            },
+            {
+              "displayName": "(A-B)/A*100",
+              "label": "D",
+              "paletteIndex": null,
+              "plotType": null,
+              "valuePrefix": null,
+              "valueSuffix": null,
+              "valueUnit": null,
+              "yAxis": 0
+            }
+          ],
+          "refreshInterval": null,
+          "secondaryVisualization": "Radial",
+          "sortBy": "-value",
+          "time": {
+            "range": 900000,
+            "type": "relative"
+          },
+          "type": "List",
+          "unitPrefix": "Metric"
+        },
+        "packageSpecifications": "",
+        "programText": "A = data('Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary.system-ram-memory').publish(label='A', enable=False)\nB = data('Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary.free-physical-memory').publish(label='B', enable=False)\nC = data('Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary.free-application-memory').publish(label='C', enable=False)\nD = ((A-B)/A*100).publish(label='D')",
+        "relatedDetectorIds": [],
+        "tags": null
+      }
+    },
+    {
+      "chart": {
+        "created": 0,
+        "creator": null,
+        "customProperties": {},
+        "description": "",
+        "id": "Emon0JCA0AA",
+        "lastUpdated": 0,
+        "lastUpdatedBy": null,
+        "name": "Memory Util (%) - App",
+        "options": {
+          "colorBy": "Scale",
+          "colorScale2": [
+            {
+              "gt": 80,
+              "gte": null,
+              "lt": null,
+              "lte": 100,
+              "paletteIndex": 16
+            },
+            {
+              "gt": null,
+              "gte": 0,
+              "lt": null,
+              "lte": 80,
+              "paletteIndex": 20
+            }
+          ],
+          "hideMissingValues": false,
+          "legendOptions": {
+            "fields": [
+              {
+                "enabled": false,
+                "property": "agent"
+              },
+              {
+                "enabled": false,
+                "property": "EncodingPath"
+              },
+              {
+                "enabled": false,
+                "property": "host"
+              },
+              {
+                "enabled": false,
+                "property": "sf_originatingMetric"
+              },
+              {
+                "enabled": true,
+                "property": "node-name"
+              },
+              {
+                "enabled": false,
+                "property": "sf_metric"
+              },
+              {
+                "enabled": false,
+                "property": "plugin"
+              },
+              {
+                "enabled": false,
+                "property": "Producer"
+              },
+              {
+                "enabled": false,
+                "property": "telegraf_type"
+              }
+            ]
+          },
+          "maximumPrecision": 4,
+          "programOptions": {
+            "disableSampling": false,
+            "maxDelay": null,
+            "minimumResolution": 0,
+            "timezone": null
+          },
+          "publishLabelOptions": [
+            {
+              "displayName": "Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary.system-ram-memory",
+              "label": "A",
+              "paletteIndex": null,
+              "plotType": null,
+              "valuePrefix": null,
+              "valueSuffix": null,
+              "valueUnit": null,
+              "yAxis": 0
+            },
+            {
+              "displayName": "Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary.free-physical-memory",
+              "label": "B",
+              "paletteIndex": null,
+              "plotType": null,
+              "valuePrefix": null,
+              "valueSuffix": null,
+              "valueUnit": null,
+              "yAxis": 0
+            },
+            {
+              "displayName": "Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary.free-application-memory",
+              "label": "C",
+              "paletteIndex": null,
+              "plotType": null,
+              "valuePrefix": null,
+              "valueSuffix": null,
+              "valueUnit": null,
+              "yAxis": 0
+            },
+            {
+              "displayName": "(A-C)/A*100",
+              "label": "D",
+              "paletteIndex": null,
+              "plotType": null,
+              "valuePrefix": null,
+              "valueSuffix": null,
+              "valueUnit": null,
+              "yAxis": 0
+            }
+          ],
+          "refreshInterval": null,
+          "secondaryVisualization": "Radial",
+          "sortBy": "-value",
+          "time": {
+            "range": 900000,
+            "type": "relative"
+          },
+          "type": "List",
+          "unitPrefix": "Metric"
+        },
+        "packageSpecifications": "",
+        "programText": "A = data('Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary.system-ram-memory').publish(label='A', enable=False)\nB = data('Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary.free-physical-memory').publish(label='B', enable=False)\nC = data('Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary.free-application-memory').publish(label='C', enable=False)\nD = ((A-C)/A*100).publish(label='D')",
+        "relatedDetectorIds": [],
+        "tags": null
+      }
+    },
+    {
+      "chart": {
+        "created": 0,
+        "creator": null,
+        "customProperties": {},
+        "description": "",
+        "id": "EmpGX7WA4AA",
+        "lastUpdated": 0,
+        "lastUpdatedBy": null,
+        "name": "Top 10 Ports - Receive (Bit Rate)",
+        "options": {
+          "colorBy": "Scale",
+          "colorScale2": [
+            {
+              "gt": 85899345920,
+              "gte": null,
+              "lt": null,
+              "lte": null,
+              "paletteIndex": 16
+            },
+            {
+              "gt": null,
+              "gte": null,
+              "lt": null,
+              "lte": 85899345920,
+              "paletteIndex": 20
+            }
+          ],
+          "hideMissingValues": true,
+          "legendOptions": {
+            "fields": [
+              {
+                "enabled": false,
+                "property": "agent"
+              },
+              {
+                "enabled": false,
+                "property": "EncodingPath"
+              },
+              {
+                "enabled": false,
+                "property": "host"
+              },
+              {
+                "enabled": true,
+                "property": "interface-name"
+              },
+              {
+                "enabled": false,
+                "property": "sf_originatingMetric"
+              },
+              {
+                "enabled": false,
+                "property": "sf_metric"
+              },
+              {
+                "enabled": false,
+                "property": "plugin"
+              },
+              {
+                "enabled": false,
+                "property": "Producer"
+              },
+              {
+                "enabled": false,
+                "property": "telegraf_type"
+              }
+            ]
+          },
+          "maximumPrecision": null,
+          "programOptions": {
+            "disableSampling": false,
+            "maxDelay": 0,
+            "minimumResolution": 0,
+            "timezone": null
+          },
+          "publishLabelOptions": [
+            {
+              "displayName": "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters.bytes-received - Scale:8 - Top 10 - Exclude x > 107374182400",
+              "label": "A",
+              "paletteIndex": 13,
+              "plotType": null,
+              "valuePrefix": null,
+              "valueSuffix": null,
+              "valueUnit": null,
+              "yAxis": 0
+            }
+          ],
+          "refreshInterval": null,
+          "secondaryVisualization": "Sparkline",
+          "sortBy": "-value",
+          "time": {
+            "range": 900000,
+            "type": "relative"
+          },
+          "type": "List",
+          "unitPrefix": "Binary"
+        },
+        "packageSpecifications": "",
+        "programText": "A = data('Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters.bytes-received', rollup='rate').scale(8).top(count=10).below(107374182400, inclusive=True, clamp=True).publish(label='A')",
+        "relatedDetectorIds": [],
+        "tags": null
+      }
+    },
+    {
+      "chart": {
+        "created": 0,
+        "creator": null,
+        "customProperties": {},
+        "description": "",
+        "id": "EmpI2-eA4AA",
+        "lastUpdated": 0,
+        "lastUpdatedBy": null,
+        "name": "Top 10 Ports - Sent (Bit Rate)",
+        "options": {
+          "colorBy": "Scale",
+          "colorScale2": [
+            {
+              "gt": 85899345920,
+              "gte": null,
+              "lt": null,
+              "lte": null,
+              "paletteIndex": 16
+            },
+            {
+              "gt": null,
+              "gte": null,
+              "lt": null,
+              "lte": 85899345920,
+              "paletteIndex": 20
+            }
+          ],
+          "hideMissingValues": true,
+          "legendOptions": {
+            "fields": [
+              {
+                "enabled": false,
+                "property": "agent"
+              },
+              {
+                "enabled": false,
+                "property": "EncodingPath"
+              },
+              {
+                "enabled": false,
+                "property": "host"
+              },
+              {
+                "enabled": true,
+                "property": "interface-name"
+              },
+              {
+                "enabled": false,
+                "property": "sf_originatingMetric"
+              },
+              {
+                "enabled": false,
+                "property": "sf_metric"
+              },
+              {
+                "enabled": false,
+                "property": "plugin"
+              },
+              {
+                "enabled": false,
+                "property": "Producer"
+              },
+              {
+                "enabled": false,
+                "property": "telegraf_type"
+              }
+            ]
+          },
+          "maximumPrecision": null,
+          "programOptions": {
+            "disableSampling": false,
+            "maxDelay": 0,
+            "minimumResolution": 0,
+            "timezone": null
+          },
+          "publishLabelOptions": [
+            {
+              "displayName": "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters.bytes-sent - Scale:8 - Top 10 - Exclude x > 107374182400",
+              "label": "A",
+              "paletteIndex": 13,
+              "plotType": null,
+              "valuePrefix": null,
+              "valueSuffix": null,
+              "valueUnit": null,
+              "yAxis": 0
+            }
+          ],
+          "refreshInterval": null,
+          "secondaryVisualization": "Sparkline",
+          "sortBy": "-value",
+          "time": {
+            "range": 900000,
+            "type": "relative"
+          },
+          "type": "List",
+          "unitPrefix": "Binary"
+        },
+        "packageSpecifications": "",
+        "programText": "A = data('Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters.bytes-sent', rollup='rate').scale(8).top(count=10).below(107374182400, inclusive=True, clamp=True).publish(label='A')",
+        "relatedDetectorIds": [],
+        "tags": null
+      }
+    }
+  ],
+  "dashboardExport": {
+    "dashboard": {
+      "authorizedWriters": null,
+      "chartDensity": "DEFAULT",
+      "charts": [
+        {
+          "chartId": "EmoDKJMA0AA",
+          "column": 0,
+          "height": 1,
+          "row": 0,
+          "width": 12
+        },
+        {
+          "chartId": "Emon0JCA0AA",
+          "column": 6,
+          "height": 1,
+          "row": 1,
+          "width": 6
+        },
+        {
+          "chartId": "EmonyNXAw6k",
+          "column": 0,
+          "height": 1,
+          "row": 1,
+          "width": 6
+        },
+        {
+          "chartId": "EmpGX7WA4AA",
+          "column": 6,
+          "height": 2,
+          "row": 2,
+          "width": 6
+        },
+        {
+          "chartId": "EmpI2-eA4AA",
+          "column": 0,
+          "height": 2,
+          "row": 2,
+          "width": 6
+        }
+      ],
+      "created": 0,
+      "creator": null,
+      "customProperties": null,
+      "description": "",
+      "discoveryOptions": null,
+      "eventOverlays": null,
+      "filters": {
+        "sources": [],
+        "time": null,
+        "variables": [
+          {
+            "alias": "Router",
+            "applyIfExists": false,
+            "description": "",
+            "preferredSuggestions": [],
+            "property": "Producer",
+            "propertyMappings": [
+              "Producer"
+            ],
+            "replaceOnly": false,
+            "required": true,
+            "restricted": false,
+            "value": "dr01"
+          }
+        ]
+      },
+      "groupId": "EmoBeSLA0AA",
+      "id": "EmoBek0A4AA",
+      "lastUpdated": 0,
+      "lastUpdatedBy": null,
+      "maxDelayOverride": null,
+      "name": "Router Resources",
+      "selectedEventOverlays": null,
+      "tags": null
+    }
+  },
+  "hashCode": -1391778812,
+  "id": "EmoBek0A4AA",
+  "modelVersion": 1,
+  "packageType": "DASHBOARD"
+}
