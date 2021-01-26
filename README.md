@@ -20,4 +20,15 @@ Now...how to visualize the data in Splunk IMT? There are no built-in dashboards 
 
 In your Splunk IMT account, go to the Dashboards page.  Then click on the big + sign in the upper right, select Import in the menu, then Dashboard Group.  It will prompt you to select a file.  Select the "Cisco Router.json" file.  It should import and create a group with two dashboards in it, pictured below.
 
-![ss1](/images/Screen Shot 2021-01-26 at 11.59.34 AM.png)
+![ss1](/images/ss1.png)
+![ss2](/images/ss2.png)
+
+You have the option to select from three routers named dr01, dr02, and dr03 at the top of each dashboard.
+
+To explore all the metrics, click on Metrics at the top, then search on "cisco" as pictured below...
+
+![ss3](/images/ss3.png)
+
+The data could take a few minutes to appear on the first run since we have to create new MTS for all of it.  Also, the data is limited; that is, it does not represent all the data that you could possibly stream with Cisco.  The full scope of metrics that Cisco provides is vast.  This is more of a prototype to show it can be done, using some standard metrics.
+
+I hope it is useful.  Enjoy!
